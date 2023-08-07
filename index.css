@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,cornflowerblue, #f6f6f6);
+}
+
+div.container{
+    width: 30rem;
+    height: 15rem;
+    margin: 5rem auto;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+}
+h4{
+    background: linear-gradient(to left,#2f2f2f, #8f8f8f);
+    text-align: center;
+    -webkit-background-clip: text; 
+    color: transparent;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+form{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0.25rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.formData{
+    margin-left:3.5rem;
+}
+.content{
+    height: 5rem;
+    margin-left: 4.25rem;
+}
+
+
+input{
+    margin: 0 0.75rem;
+    appearance: none ;
+    border: none;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f6f6f6;
+    border-bottom: 2px solid #4b556b;
+    transition: 0.3s ease;
+}
+input:hover{
+    font-size: 1.75rem;
+}
+input:focus-visible{
+    height: 1.75rem;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+}
+
+
+button{
+    appearance: none;
+    background: linear-gradient(to right,rgb(89, 141, 236) 60%, rgb(173, 202, 255));
+    font-size: 1.5rem;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    margin: 0 1rem;
+    color: #f6f6f6;
+    transition: 0.3s ease;
+}
+button:hover{
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 10px #4b556b;
+}
+
+.divAllData{
+    width: 30rem;
+    height: 15rem;
+    margin: 5rem auto;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f6f6f6;
+}
+
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  width: 25%;
+}
+
+
+@media screen  and (max-width:800px){
+    div.main{
+        width: 20rem;
+        height: 36rem;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0;
+        margin: 1rem 0;
+    }
+    input{
+        width: 18rem;
+        height: 1.5rem;
+    }
+    button{
+        width: 18rem;
+        height: 4rem;
+    }
+}
